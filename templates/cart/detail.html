@@ -8,12 +8,12 @@
 <table class="cart">
     <thead>
         <tr>
-            <th>Image</th>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Remove</th>
-            <th>Unit price</th>
-            <th>Price</th>
+            <th>Изображение</th>
+            <th>Товар</th>
+            <th>Количество</th>
+            <th>Удалить товар</th>
+            <th>Цена одной штуки</th>
+            <th>Стоимость</th>
         </tr>
     </thead>
     <tbody>
@@ -38,14 +38,14 @@
         </tr>
         {% endfor %}
         <tr class="total">
-            <td>Total</td>
+            <td>Стоимость всех товаров</td>
             <td colspan="4"></td>
             <td class="num">₽{{ cart.get_total_price }}</td>
         </tr>
     </tbody>
 </table>
 <p class="text-right">
-    <a href="{% url 'shop:product_list' %}" class="button light">Continue shopping</a>
-    <a href="#" class="button">Checkout</a>
+    <a href="{% url 'shop:product_list' %}" class="button light">Продолжить покупки</a>
+    <a href="#" class="button">Оплата</a>
 </p>
 {% endblock %}
