@@ -8,6 +8,15 @@ body {
     background-color: #f4f4f4;
 }
 
+body, html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
 #header {
     background-color: #6c7ae0;
     color: #ffffff;
@@ -26,16 +35,18 @@ body {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 10px 0;
+
 }
 
 #subheader .cart {
-    text-align: right;
-    padding-right: 20px;
+    padding-left: 20px;
+
 }
 
 #subheader .cart a {
     color: #333333;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 #content {
@@ -260,4 +271,73 @@ body {
 .text-right {
     text-align: right;
     margin-top: 20px;
+}
+
+
+.order-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.order-info h3 {
+    margin-top: 0;
+}
+
+.order-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-info ul li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-info ul li span {
+    font-weight: bold;
+}
+
+.order-info p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.order-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-form p {
+    margin-top: 20px;
+}
+
+.order-form input[type="submit"] {
+    background-color: #6c7ae0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form input[type="submit"]:hover {
+    background-color: #5a6cb2;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
 }
